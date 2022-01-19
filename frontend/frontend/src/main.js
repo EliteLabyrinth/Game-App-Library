@@ -9,7 +9,7 @@ import BootstrapVue from "bootstrap-vue";
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 
-const DEFAULT_TITLE = "Some Default Title";
+const DEFAULT_TITLE = "Game Library";
 router.afterEach((to, from) => {
   // Use next tick to handle router history correctly
   // see: https://github.com/vuejs/vue-router/issues/914#issuecomment-384477609
