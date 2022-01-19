@@ -348,5 +348,13 @@ export default {
   created() {
     this.getGames();
   },
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to, from) {
+        document.title = to.meta.title || "Some Default Title";
+      },
+    },
+  },
 };
 </script>
