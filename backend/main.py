@@ -14,9 +14,9 @@ CORS(app, resources={r"/*":{'origins':"*"}})
 def greetings():
     return("Hello, From Flask!")
 
-@app.route('/hello', methods=[' GET'])
-def hello():
-    return ("hello!")
+@app.route('/hello', methods=['GET'])
+def hello_route():
+    return("Hello, There!")
 
 GAMES = [
 
@@ -43,6 +43,12 @@ GAMES = [
     {   'id': uuid.uuid4().hex,
         'title':'mario',
         'genre':'retro',
+        'played': True,
+    },
+    {
+        'id': uuid.uuid4().hex,
+        'title':'The Elder Scrolls V: Skyrim',
+        'genre': 'open-world action RPG',
         'played': True,
     }
 
