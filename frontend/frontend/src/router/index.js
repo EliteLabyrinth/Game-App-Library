@@ -1,15 +1,26 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Hello from "../components/Hello.vue"
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Games from "../components/Games.vue";
+import Hello from "../components/Hello.vue";
+
+Vue.use(VueRouter);
+
 const routes = [
   {
-    path: '/hello',
-    name: 'Hello',
-    component: Hello
-  }
+    path: "/",
+    name: "Games",
+    component: Games,
+  },
+  {
+    path: "/hello",
+    name: "Hello",
+    component: Hello,
+  },
 ];
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+const router = new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
   routes,
 });
 
