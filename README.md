@@ -8,9 +8,9 @@ A game app library where backend is built using flask and frontend is built usin
 
 ---
 
-- Users can crated game by clicking on the Add Game button.
-- Users can updated games by clicking on the update button.
-- Users can delete games by clicking on the delete button.
+- Users can create a game.
+- Users can update a game.
+- Users can delete a game.
 
 # Screenshots:
 
